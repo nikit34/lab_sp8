@@ -20,7 +20,7 @@ int main()
    char* name=buf;
    bool print=false;
    if(*name=='+'){ ++name; print=true;}
-   string gramma_name = 
+   string gramma_name =
                   string( *name?name:"mlisp20" )+".txt" ;
    cout << "Gramma:"<<
             gramma_name<<endl;
@@ -58,7 +58,7 @@ int main()
     string source_name = string(name) + ".ss";
     ifstream tmp(source_name.c_str());
     if(!tmp) break;
-// строка ввода похожа на имя файла
+// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     file = true;
     parser.PARSER_DEBUG = false;
    }while(false);
@@ -74,7 +74,7 @@ int main()
 
    cout << "Source:"<<
             source_name<<endl;
-  {// начало блока распечатки файла
+  {// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     ifstream fsource(source_name.c_str());
     int linecount=0;
     while(fsource){
@@ -84,11 +84,11 @@ int main()
                               buf<<endl;
      }//while(fsource)...
      cout<<"_________________\n";
-   }// конец блока
+   }// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
    int res = parser.parse(source_name.c_str());
    if(res==0) cout <<"Good source!\n";
-    else 
+    else
        cout<< parser.getMessage()<<endl;
    cout<<"_________________________\n";
  } while(true);
