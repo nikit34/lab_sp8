@@ -36,7 +36,7 @@
   (display mm)(display ".")
  yyyy
 )
-(define dd 31)
-(define mm 12)
-(define yyyy 2021)
+(define dd 04)
+(define mm 02)
+(define yyyy 2000)
 (birthday (day-of-week))
