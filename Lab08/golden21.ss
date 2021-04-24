@@ -1,6 +1,6 @@
 ;golden21
 (define(NOT? x?)(= 0(cond (x? 1) (#t 0))))
-(define a 3)(define b 4)
+(define a 2)(define b 6)
 (define (fun x)
  (set! x (- x (/ 100 101)))
  (-(+(log(+ x 1))(exp(+(- x)7))(expt(- x 8)3)) (atan(- x 6)) 2)
@@ -46,8 +46,8 @@
  );if...
 )
 (define (close-enough? x y)
-  (>(tolerance)(abs (+ x (- y)))))
-(define tolerance (* 1 (/ 10000)))
+  (> tolerance (abs (+ x (- y)))))
+(define tolerance 0.00001e2)
 (define total-iterations 0)
 (define xmin 0)
 (set! xmin(golden-section-search a b))
